@@ -1,4 +1,5 @@
-package com.kaori02.graphqlserver.bookdetails;
+package com.kaori02.graphqlserver.bookdetails.model;
+
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
