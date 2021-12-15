@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  mongo:
+    image: mongo
+    container_name: book-details-mongo
+    ports:
+      - 27017:27017
+    volumes:
+      - ./.docker/mongo:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=kaori02
+      - MONGO_INITDB_ROOT_PASSWORD=kaori02
+    networks:
+      book_details_net:
+        ipv4_address: 192.168.200.10
+
+networks:
+  book_details_net:
+    internal: true
+    ipam:
+      config:
+        - subnet: 192.168.200.0/24
