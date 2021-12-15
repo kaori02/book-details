@@ -1,18 +1,5 @@
 use bookDetails;
 
-db.createUser(
-  {
-    user:  "kaori02",
-    pwd:   "kaori02",
-    roles: [
-      {
-        role: "readWrite",
-        db:   "bookDetailsDB"
-      }
-    ]
-  }
-);
-
 db.books.insertMany([
   { id: "book-1", name: "Harry Potter and the Philosopher's Stone", pageCount: 223, authorId: "author-1" },
   { id: "book-2", name: "Moby Dick", pageCount: 635, authorId: "author-2" },

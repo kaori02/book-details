@@ -22,7 +22,7 @@ docker-compose up
 - Initialize MongoDB
 
   ```sh
-  mongo --host 192.168.200.10 < init-mongo.js
+  mongo --host 192.168.200.10 -u "kaori02" -p "kaori02" --authenticationDatabase "admin" < init-mongo.js
   ```
 
 ## How to Stop
