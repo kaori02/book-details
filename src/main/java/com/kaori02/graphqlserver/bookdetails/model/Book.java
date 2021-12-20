@@ -9,6 +9,7 @@ public class Book {
   private String id;
   private String name;
   private long pageCount;
+
   private String authorId;
 
   public Book() {
@@ -24,31 +25,7 @@ public class Book {
     return id;
   }
 
-  public String getName() {
-    return name;
-  }
-
-  public long getPageCount() {
-    return pageCount;
-  }
-
   public String getAuthorId() {
     return authorId;
-  }
-
-  public void setId(String id) {
-    this.id = id;
-  }
-
-  public void setName(String name) {
-    this.name = name;
-  }
-
-  public void setPageCount(long pageCount) {
-    this.pageCount = pageCount;
-  }
-
-  public void setAuthorId(String authorId) {
-    this.authorId = authorId;
   }
 }
