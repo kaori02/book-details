@@ -2,8 +2,6 @@ package com.kaori02.graphqlserver.bookdetails;
 
 import com.google.common.base.Charsets;
 import com.google.common.io.Resources;
-import com.kaori02.graphqlserver.bookdetails.repository.AuthorRepository;
-import com.kaori02.graphqlserver.bookdetails.repository.BookRepository;
 import graphql.GraphQL;
 import graphql.schema.GraphQLSchema;
 import graphql.schema.idl.RuntimeWiring;

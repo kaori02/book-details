@@ -18,7 +18,6 @@ public class Author {
     this.lastName = lastName;
   }
 
-
   public String getId() {
     return id;
   }
