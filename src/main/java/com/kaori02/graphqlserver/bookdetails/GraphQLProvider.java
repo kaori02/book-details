@@ -53,5 +53,4 @@ public class GraphQLProvider {
   public GraphQL graphQL() {
     return graphQL;
   }
-
 }
