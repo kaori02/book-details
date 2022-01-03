@@ -1,0 +1,11 @@
+server:
+  port: 8000
+spring:
+  data:
+    mongodb:
+      authentication-database: admin
+      username: kaori02
+      password: kaori02
+      database: bookDetails
+      host: 192.168.200.10
+      port: 27017
