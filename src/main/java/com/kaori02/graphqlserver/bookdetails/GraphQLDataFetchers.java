@@ -17,6 +17,13 @@ public class GraphQLDataFetchers {
   @Autowired
   BookRepository bookRepository;
 
+  public DataFetcher getAllBooksDataFetcher() {
+    return dataFetchingEnvironment -> {
+      List<Book> allBooks = bookRepository.findAll();
+      return allBooks;
+    };
+  }
+
   public DataFetcher getBookByIdDataFetcher() {
     return dataFetchingEnvironment -> {
       String bookId = dataFetchingEnvironment.getArgument("id");
