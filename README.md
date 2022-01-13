@@ -17,13 +17,10 @@ docker-compose up
 
 ### Initialization
 
-**On the first run**, here is something that you need to do:
+**On the first run**, you need to:
 
-- Initialize MongoDB
-
-  ```sh
-  mongo --host 192.168.200.10 -u "kaori02" -p "kaori02" --authenticationDatabase "admin" < init-mongo.js
-  ```
+- Insert MongoDB Data by uncommenting [this runner](https://github.com/kaori02/book-details/blob/main/src/main/java/com/kaori02/graphqlserver/bookdetails/BookDetailsApplication.java#L22).
+- Don't forget to **comment it back** after the first run.
 
 ## How to Stop
 
